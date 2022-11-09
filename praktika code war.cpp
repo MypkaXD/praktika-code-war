@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <string>
 #include <vector>
+//#include <algorithm>
 
 #include "conver_string_to_int.h"
 #include "Convert boolean values to strings 'Yes' or 'No'.h"
@@ -10,6 +11,35 @@
 #include "You only need one - Beginner.h"
 #include "Isograms.h"
 #include "add_binary.h"
+#include "Abbreviate a Two Word Name.h"	
+
+int square_digits(int num) {
+	std::string result;
+	result = std::to_string(num);
+	int count = 0;
+	std::string res;
+	while (num > 0) {
+		result[count] = (std::to_string((num % 10)* (num % 10)));
+		num = num / 10;
+		count++;
+	}
+	return std::stoi(result);
+}
+
+int main() {
+	std::cout << square_digits(3212);
+	return 0;
+}
+
+/*
+int main() {
+
+	std::string name = "Sam Harris";
+	std::cout << abbrevName(name);
+
+	return 0;
+}
+*/
 
 /*
 int main() {
