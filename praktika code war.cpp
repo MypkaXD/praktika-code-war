@@ -12,7 +12,16 @@
 #include "Isograms.h"
 #include "add_binary.h"
 #include "Abbreviate a Two Word Name.h"	
+#include "Affine_Cipher.h"
 
+/*
+int main() {
+	std::cout << affine_encrypt("{Good morning!}", 7, 9,26) << std::endl;
+}
+*/
+
+
+/*
 int square_digits(int num) {
 	std::string result;
 	result = std::to_string(num);
@@ -30,6 +39,7 @@ int main() {
 	std::cout << square_digits(3212);
 	return 0;
 }
+*/
 
 /*
 int main() {
