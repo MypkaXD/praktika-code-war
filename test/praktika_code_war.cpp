@@ -13,13 +13,77 @@
 #include "add_binary.h"
 #include "Abbreviate a Two Word Name.h"	
 #include "Affine_Cipher.h"
+#include "Exes_and_Ohs.h"
+#include "String_repeat.h"
+#include "Fake_Binary.h"
+#include "Cat_years_Dog_years.h"
+#include "Is a number prime.h"
+#include "Count characters in your string.h"
+
+
+int main() {
+
+	std::map<char, unsigned> temp = count("aabb");
+	std::map <char, unsigned> ::iterator it = temp.begin();
+	for (int count = 0; count < temp.size(); ++it, ++count) {
+		std::cout << it->first << " " << it->second << std::endl;
+	}
+
+	return 0;
+}
+
+
+/*
+int main() {
+
+	using V = std::vector<int>;
+
+	Describe(HumanYearsCatYearsDogYears) {
+	  It(BasicTests) {
+		Assert::That(humanYearsCatYearsDogYears( 1), Equals(V{1, 15, 15}));
+		Assert::That(humanYearsCatYearsDogYears( 2), Equals(V{2, 24, 24}));
+		Assert::That(humanYearsCatYearsDogYears(10), Equals(V{10, 56, 64}));
+	  }
+	};
+
+	std::cout << humanYearsCatYearsDogYears(1)[0] << humanYearsCatYearsDogYears(1)[1] << humanYearsCatYearsDogYears(1)[2] << std::endl;
+	std::cout << humanYearsCatYearsDogYears(2)[0] << humanYearsCatYearsDogYears(2)[1] << humanYearsCatYearsDogYears(2)[2] << std::endl;
+	std::cout << humanYearsCatYearsDogYears(10)[0] << humanYearsCatYearsDogYears(10)[1] << humanYearsCatYearsDogYears(10)[2] << std::endl;
+
+	return 0;
+}
+*/
+
+/*
+int main() {
+	std::cout << fakeBin("45385593107843568");
+	return 0;
+}
+*/
+
+/*
+int main() {
+
+	std::cout << repeat_str(10, "I");
+
+	return 0;
+}
+*/
+
+/*
+int main() {
+	std::string name = "oooXXX";
+	if (Exes_and_Ohs(name))
+		std::cout << "GOOD";
+	else std::cout << "BAD";
+}
+*/
 
 /*
 int main() {
 	std::cout << affine_encrypt("{Good morning!}", 7, 9,26) << std::endl;
 }
 */
-
 
 /*
 int square_digits(int num) {
@@ -122,10 +186,11 @@ int main() {
 }
 */
 
-
+/*
 int main() {
 	std::string s1 = "123456";
 	std::cout << string_to_number(s1);
 
 	return 0;
 }
+*/
