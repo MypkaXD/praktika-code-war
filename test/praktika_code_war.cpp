@@ -19,8 +19,36 @@
 #include "Cat_years_Dog_years.h"
 #include "Is a number prime.h"
 #include "Count characters in your string.h"
+#include "Equal_Sides_Of_An_Array.h"
+#include "prak_DB_1.h"
+#include "RGB_To_Hex_Conversion.h"
+
+/*
+int main() {
+	std::cout << RGBToHex::rgb(-20, 275, 125);
+	return 0;
+}
+*/
+
+/*
+int main() {
+	for (int count = 0; count < 10; ++count)
+		std::cout << bankdetailgenerate() << std::endl;
+
+	return 0;
+}
+*/
+
+/*
+int main() {
+	std:: vector <int> numbers {1,2,3,4};
+	std::cout << find_even_index(numbers);
+	return 0;
+}
+*/
 
 
+/*
 int main() {
 
 	std::map<char, unsigned> temp = count("aabb");
@@ -31,6 +59,7 @@ int main() {
 
 	return 0;
 }
+*/
 
 
 /*
